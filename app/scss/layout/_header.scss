@@ -1,0 +1,112 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+.header{
+	width:100%; 	
+	order: 1;	
+    -webkit-order: 1;
+    position:fixed;       
+    left: 0;  right:0;         
+    z-index: 50;     
+    top:0; width:100%;  
+    padding: 42px 0 10px; transition: all 0.3s linear;
+    &.fix {padding: 20px 0; background: #fff; box-shadow: 0 6px 20px rgba(17, 48, 74, 0.1);}
+    .wrapper {    max-width: 1444px;}
+}   
+.header_cols {display: flex; justify-content: space-between; flex-grow: 1;}
+.header_logo {float:left; width:215px;height:25px; margin-right: 0px;background: url(../svg/logo-b.svg) no-repeat left;}     
+.mobile_nav {display: flex;justify-content: space-between; align-items: center; min-width: 66.2%;}
+
+.mobile-button { z-index:50; height: 30px; width: 30px; float:right;display: none;margin:-3px -2px -3px 0;justify-content: center;align-items: center;
+    span {backface-visibility: hidden;position: relative; background:#212121; transition:all 0.3s ease-out;width:24px; height:2px; display:block; margin:0px 0 0px 0px;}   
+    span:before,  span:after{ transition: all 0.3s linear;backface-visibility: hidden;  content:''; background:#212121; height:2px; display:block; width:100%; position:absolute;}
+    span:before {top: 8px;right: 0%;}    
+    span:after {bottom:8px;left:0;}     
+    &.open { 
+        span {background: transparent;}       
+        span:before {top:0; transform: rotate(45deg);}  
+        span:after  {bottom:0px; transform: rotate(-45deg);}
+    }       
+}
+.nav {  text-align: center;display: flex; align-items: center;    min-width: 68%;
+    li {z-index: 1; list-style: none; margin: 0px 29.5px 0px;
+        a {color: #09183a; font-size: 14px; font-weight: 500; display: inline-block; vertical-align: middle; position: relative;line-height: 22px;
+            &:hover {color:#0DB0DF;}
+        }
+    }            
+    li.active a {color:#f95c39;
+        &:after {opacity: 1;}
+    }
+}
+
+.header_search {position: relative;}
+.header_search_opener {cursor: pointer;color:#101922; text-align: center; line-height: 20px; width: 20px;font-size: 12px;margin-bottom: 2px;
+    span {display: inline-block;    vertical-align: middle;}
+    &:hover {color:#0DB0DF;}
+}
+.header_search_drop {display: none;}
+
+  
+.soc {
+    &_item {display: inline-block;vertical-align: middle;margin:0 0 2px 15px;color:#101922;font-size: 12px; text-align: center; line-height: 20px; width: 20px;
+        &:hover {color:#0DB0DF;}
+        span {display: inline-block;    vertical-align: middle;}
+        .icon-instagram {font-size: 13px;}
+        .icon-youtube {font-size: 10px;}
+    }
+}
+.header-light .header:not(.fix) {
+    .header_logo {background-image: url(../svg/logo.svg);}
+    .mobile-button span {background: #fff;
+        &:before, &:after {background: #fff;}
+    }
+    .mobile-button.open span {
+        &:before, &:after {background: #212121;}
+    }
+}
+   
+@media screen and (max-width: 1279px) { 
+    .header { padding: 25px 0 10px;}  
+} 
+@media screen and (max-width: 1199px) {  
+    .nav {  min-width: 64%;}
+    .nav li { margin: 0px 14px 0px;}
+    .mobile_nav { min-width: 73.5%;}
+
+}
+@media screen and (min-width: 1024px) {     
+    .header-light .header:not(.fix) {
+        .nav > li > a:not(:hover) {color:#fff;}
+        .soc_item:not(:hover) {color:#fff;}
+        .header_search_opener:not(:hover) {color:#fff;}
+    }
+}
+@media screen and (max-width: 1023px) {     
+    .header {padding: 10px 0 10px;}  
+    .mobile_nav { position:fixed; overflow: auto; overflow-x: hidden; bottom:0;   display: none;background: #fff; padding: 15px;    right: 0rem;    top: 0rem; left: 0rem; flex-direction: column; justify-content: space-between;
+        &:before {content:'';display: block;}
+        &.open {   display: flex;}
+    }
+    .header.open .header_logo, .header-light .header.open:not(.fix) .header_logo { background-image: url(../svg/logo-b.svg);}
+    .mobile-button {display: flex;}
+    .nav {display: block;    
+        li { margin: 20px 0;}
+    }
+    .header_logo {position: relative; z-index: 10;  }
+    
+}
+@media screen and (max-width: 559px) {  
+    
+}
+@media screen and (max-height: 349px) {    
+   .nav li {  margin: 15px 0 0;}
+}
+@media screen and (max-width: 424px) { 
+    
+}
+@media screen and (max-width: 374px) { 
+    
+}

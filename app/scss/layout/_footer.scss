@@ -1,0 +1,69 @@
+.footer {
+	text-align:left;
+	width:100%;
+	min-width: $min-width;
+	order: 3;	
+    -webkit-order: 3;	
+    z-index: 10;
+    background: #101922; position: relative;color: #FFFFFF; padding: 37px 0 33px;
+    .soc_item {color:#fff;
+        &:first-child {margin-left:2px;}
+    }
+}
+
+.footer_cols {display: flex;justify-content: space-between;    align-items: stretch; position: relative;}
+.footer_cols-logo {width:214px; text-align: center;}
+.footer_logo {    margin: 41px 0 0px;width:214px;display: block;}
+.footer_cols-center {min-width: 36.8%;display: flex;justify-content: space-between;}
+
+.footer_copy {font-weight: bold;font-size: 9px;line-height: 11px;text-align: center;} 
+.footer_txt {font-size: 9px;line-height: 170%; max-width: 278px;} 
+.footer_title {font-size: 12px;line-height: 14px;text-transform: uppercase;margin-bottom: 27px;} 
+.footer_table {font-size: 12px;line-height: 14px;
+    th {padding-bottom: 20px;width: 70px; font-weight: 400;}
+    td {padding-bottom: 20px;}
+}
+.footer_partn {display: flex;align-items: center;    margin: -3px -23px 23px 4px;
+    &_item {margin-right:23px;}
+}
+.footer_conts {min-width: 216px;font-size: 12px;line-height: 14px;text-transform: uppercase;margin-bottom: 28px;
+    &_item {margin-bottom: 14px;}
+    a {color:#fff;}
+}
+.footer_cols-ind { width: 23.3%; min-width: 245px;}
+
+@media screen and (max-width: 1199px) {  
+    .footer_conts {min-width: 210px;}
+    .footer_table th { width: 44px;}
+    .footer_cols-center { min-width: 40.8%;}
+}
+@media screen and (min-width: 1023px) {  
+    .footer_copy { width:214px;padding-bottom: 30px; position: absolute;left:0;bottom:0;}
+}
+@media screen and (max-width: 1023px) {  
+    .footer_cols {flex-wrap: wrap;}
+    .footer_cols-logo  {margin:0 0 35px; width: 100%;}
+    .footer_logo {    margin: 0px auto 0px;}
+    .footer_copy {width: 100%; margin:30px 0 0;}
+    .footer_cols-center {    min-width: 57.8%;}
+
+}
+@media screen and (max-width: 767px) {  
+    .footer_cols-center {min-width: 100%; }
+    .footer_cols-ind {margin-top:30px; width: 100%;}
+    .footer_txt {max-width: 100%;}
+    .footer_title { margin-bottom: 20px;}
+
+}
+@media screen and (max-width: 599px) {  
+    
+}
+@media screen and (max-width: 429px) {  
+    .footer_cols-center {display: block;}
+    .footer_table {margin-bottom: 30px;}
+    .footer_table td, .footer_table th {    padding-bottom: 15px;}
+    .footer_conts { margin-bottom: 18px;}
+
+
+
+}

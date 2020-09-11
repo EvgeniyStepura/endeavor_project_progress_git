@@ -1,0 +1,83 @@
+@font-face {font-display: swap;
+    font-family: 'Futura PT';
+    src: url('../fonts/FuturaPT-Medium.eot');
+    src: local('../fonts/Futura PT Medium'), local('FuturaPT-Medium'),
+        url('../fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Medium.woff') format('woff'),
+        url('../fonts/FuturaPT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {font-display: swap;
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-down-arrow:before {
+  content: "\e900";
+  color: #0db0df;
+}
+.icon-fb:before {
+  content: "\e901";
+
+}
+.icon-instagram:before {
+  content: "\e902";
+}
+.icon-left-arrow:before {
+  content: "\e903";
+  color: #0db0df;
+}
+.icon-linkedin:before {
+  content: "\e904";
+ 
+}
+.icon-loupe:before {
+  content: "\e905";
+
+}
+.icon-play:before {
+  content: "\e906";
+
+}
+.icon-playcirc:before {
+  content: "\e907";
+  color: #0db0df;
+}
+.icon-right-arrow:before {
+  content: "\e908";
+  color: #0db0df;
+}
+.icon-tw:before {
+  content: "\e909";
+
+}
+.icon-youtube:before {
+  content: "\e90a";
+
+}
